@@ -11,7 +11,7 @@ var names = [];
 var answers = [];
 //var allData;
 var allAnime;
-fetch('./allData.json')
+fetch('./taggle/allData.json')
   .then(response => response.json())
   .then(allData => {
     var index = Math.floor(Math.random() * 350);
@@ -44,7 +44,7 @@ fetch('./allData.json')
   })
   .catch(error => console.log(error));
 
-fetch('./allAnime.json')
+fetch('./taggle/allAnime.json')
   .then(response => response.json())
   .then(allAnime => {
     $.each(allAnime, function(i, p) {
