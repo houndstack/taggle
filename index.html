@@ -1,0 +1,75 @@
+<!--form action="{{ url_for("gfg")}}" method="post"-->
+<html>
+  <head>
+    <style>html{visibility: hidden;opacity:0;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+    <link id="mainStyle" href="/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/allData.json"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="topnav">
+      <div id="title">TAGGLE</div>
+      <a href="#news">Daily</a>
+      <a class="active" href="#home">Unlimited</a>
+    </div>
+    <h1>Tags:</h1>
+    <div id="wing">
+      <span id="seasonTitle" class="clueHeader">Season:</span>
+      <span id="season" class="clue"></span>
+      <span id="scoreTitle" class="clueHeader"><br>Average Score:</span>
+      <span id="score" class="clue"></span>
+      <span id="popularityTitle" class="clueHeader"><br>Popularity:</span>
+      <span id="popularity" class="clue"></span>
+    </div>
+    <div id="wing2">
+      <span id="genresTitle" class="clueHeader">Genres:</span>
+      <span id="genres" class="clue"></span>
+      <span id="studiosTitle" class="clueHeader"><br>Studios:</span>
+      <span id="studios" class="clue"></span>
+    </div>
+    <div id="resultLeft" class="tags"></div>
+    <!--input id="guess"></input-->
+    <div id="bruh">
+      <button class="button-85 role="button id="skip" onclick="postData()"> Skip </button>
+      <input id="guess" list="submission">
+      <datalist id="submission">
+      </datalist> 
+      <button id="populator" onclick="populate()">populate</button>
+      <button class="button-85 role="button id="submit" onclick="guess()"> Guess </button>
+    </div>
+    <div id="result"></div>
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="modalHeader">Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <p id="answer"></p>
+      </div>
+      <div class="modal-footer">
+        <h3> </h3>
+        <button class="button-85" role="button" id="reset" onclick="postData()"> New Game </button>
+        <h3> </h3>
+      </div>
+    </div>
+
+</div>
+    <!--footer>
+  <p>All data and statistics taken from
+  <a href="https://anilist.co">Anilist</a></p>
+</footer-->
+  <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html> 
