@@ -14,7 +14,8 @@ var allAnime;
 fetch('./taggle/allData.json')
   .then(response => response.json())
   .then(allData => {
-    var index = Math.floor(Math.random() * 350);
+    console.log(allData.length);
+    var index = Math.floor(Math.random() * allData.length);
     console.log(typeof allData);
     console.log(allData);
     console.log(allData[index]['tags'])
