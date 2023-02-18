@@ -101,7 +101,7 @@ function postData() {
   document.getElementById("modalHeader").innerHTML = "LOADING...";
   console.log("resetting")
   console.log("huh")
-  $("html").load("/");
+  $("html").load("/taggle");
 
 }
 
