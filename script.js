@@ -101,7 +101,7 @@ function postData() {
   document.getElementById("modalHeader").innerHTML = "LOADING...";
   console.log("resetting")
   console.log("huh")
-  $("html").load("/taggle");
+  $("html").load("/");
 
 }
 
@@ -212,6 +212,11 @@ function genretize(genres){
     gen = gen.concat("\n"+genres[i]);
   }
   return gen;
+}
+
+function skip(){
+  fin(false, answers[0], answers[1]);
+  displayModal();
 }
 var modal = document.getElementById("myModal");
 
