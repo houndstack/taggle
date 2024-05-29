@@ -45,7 +45,7 @@ fetch('./taggle/dailies.json')
   .catch(error => console.log(error));*/
 
 //Generate random show and fetch necessary data
-fetch('./taggle/allDataOpenings.json')
+fetch('./allDataOpenings.json')
   .then(response => response.json())
   .then(allData => {
     allData = filtering(allData, gameType);
@@ -97,7 +97,7 @@ fetch('./taggle/allDataOpenings.json')
   .catch(error => console.log(error));
 
 //Fetch list of possible answers
-fetch('./taggle/allAnimeSequels.json')
+fetch('./allAnimeSequels.json')
   .then(response => response.json())
   .then(allAnime => {
     $.each(allAnime, function(i, p) {
